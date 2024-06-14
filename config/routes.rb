@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :music_records do
     post 'order', to: 'music_records#order', on: :member
     post 'rent', to: 'music_records#rent', on: :member
+    post 'sell', to: 'music_records#sell', on: :member
   end
 
   get "up" => "rails/health#show", as: :rails_health_check
